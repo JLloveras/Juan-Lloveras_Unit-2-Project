@@ -1,8 +1,18 @@
 /* The code below centers the text of all h1's on the page. */
+body{
+    background-color: rgb(20, 20, 20);
+    color:whitesmoke;
+}
 h1 {
     text-align:center;
 }
-
+.top{
+    height:650px;
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("https://images.stockcake.com/public/9/7/6/97614af6-3fa8-4e5c-a27f-2e517dfeed9f/family-camping-trip-stockcake.jpg");
+    background-repeat:no-repeat;
+    background-size:contain;
+    background-position: center top;
+}
 /* The code below centers all images on the page and gives them a width of 400px. */
 img {
   display: block;
@@ -12,18 +22,18 @@ img {
 }
 
 /* The code below centers the text of all h2's on the page. */
-h2 {
+h3 {
     text-align:center;
 }
 
 /* The code below aligns all the sections horizontally on the bottom. */
 .section-container {
-    display:flex;
-    justify-content:space-between;
+    width:100%;
 }
 
 /* The code below a solid black border to section and puts space between them (the margin). */
 .section {
-    border: 5px black solid;
+    border: solid;
     margin:5px;
+    padding:3px;
 }
