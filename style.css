@@ -15,8 +15,17 @@ body{
     background-position: center top;
 }
 /* The code below centers the text of all h1's on the page. */
-h1{
+h1, h3{
     text-align:center;
+}
+h2{
+  text-align: center;
+  margin: 7px;
+}
+p{
+  width:45%;
+  margin:8px;
+  line-height: 24px;
 }
 /* The code below centers all images on the page and gives them a width of 400px. */
 img {
@@ -25,12 +34,11 @@ img {
   margin-right: auto;
   width:400px;
 }
-
-/* The code below centers the text of all h2's on the page. */
-h3 {
-    text-align:center;
+/*PLEASE FOR THE LOVE OF HELL FIX THIS LATER, WHAT IS THIS HORRID DEMON?*/
+.section-img{
+  width:50%;
+  margin: -12% 8px 8px 49%;
 }
-
 /* The code below aligns all the sections horizontally on the bottom. */
 .section-container {
     width:100%;
@@ -38,8 +46,8 @@ h3 {
 
 /* The code below a solid black border to section and puts space between them (the margin). */
 .section {
-    border: solid;
-    margin:5px;
+    border: solid rgb(60,60,60);
+    margin:30px;
     padding:3px;
 }
 ul.navbar {
@@ -61,8 +69,12 @@ li:last-child {
   border-right: none;
 }
 .title{
-    padding: 14px 16px;
-    font: normal 20px "AMCAP Eternal"
+    font: normal 60px "AMCAP Eternal";
+    margin: 5px;
+}
+li.title{
+    font: normal 20px "AMCAP Eternal";
+    padding:14px 16px;
 }
 li a {
   display: block;
