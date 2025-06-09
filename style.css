@@ -1,10 +1,11 @@
-/* The code below centers the text of all h1's on the page. */
+
+html{
+    scroll-behavior: smooth;
+}
 body{
     background-color: rgb(20, 20, 20);
     color:whitesmoke;
-}
-h1 {
-    text-align:center;
+    font-family: Helvetica;
 }
 .top{
     height:650px;
@@ -12,6 +13,10 @@ h1 {
     background-repeat:no-repeat;
     background-size:contain;
     background-position: center top;
+}
+/* The code below centers the text of all h1's on the page. */
+h1{
+    text-align:center;
 }
 /* The code below centers all images on the page and gives them a width of 400px. */
 img {
@@ -37,3 +42,40 @@ h3 {
     margin:5px;
     padding:3px;
 }
+ul {
+  position:fixed;
+  top:0;
+  width:100%;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #111;
+}
+
+li {
+  float: left;
+}
+
+li:last-child {
+  border-right: none;
+}
+.title{
+    padding: 14px 16px;
+    font: normal 20px "AMCAP Eternal"
+}
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: #222;
+}
+
+.active {
+  background-color: #333;
+} 
