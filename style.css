@@ -42,7 +42,7 @@ h3 {
     margin:5px;
     padding:3px;
 }
-ul {
+ul.navbar {
   position:fixed;
   top:0;
   width:100%;

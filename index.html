@@ -7,34 +7,46 @@
 </head>
 
 <body>
-  <ul>
+  <ul class="navbar" id="nav">
     <li class="title">PLP</li>
-    <li><a class="active" href="#top">Home</a></li>
-    <li><a href="#section1">Our Purpose</a></li>
-    <li><a href="#section2">Statistics</a></li>
-    <li style="float:right"><a href="#section3">Help the Cause</a></li>
+    <li><a class="btn active" href="#top">Home</a></li>
+    <li><a class="btn" href="#section1">Our Purpose</a></li>
+    <li><a class="btn" href="#section2">Statistics</a></li>
+    <li><a class="btn" href="#section3">Help the Cause</a></li>
   </ul>
   <br>
   <br>
   <div class="top">
 
     <br>
-    <h1 class="slogan">Make Vacation Mandatory</h1>
-    <h3>Join the petition to make family time a priority by increasing mandatory paid time off to four weeks.</h2>
+    <h1 class="slogan">Make Paid Leave Mandatory</h1>
+    <h3>The U.S. is one of the few countries left without a national paid leave policy. Help us change that.</h3>
   </div>
+  <script>
+// Add active class to the current button (highlight it)
+var header = document.getElementById("nav");
+var btns = header.getElementsByClassName("btn");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function() {
+  var current = document.getElementsByClassName("active");
+  current[0].className = current[0].className.replace(" active", "");
+  this.className += " active";
+  });
+}
+</script>
   <div class="section-container">
     <div class="section" id="section1">
-      <h2>Section 1</h2>
+      <h2>Our Purpose</h2>
       <!-- Add text, images, and links for section 1 below. -->
 
     </div>
     <div class="section" id="section2">
-      <h2>Section 2</h2>
+      <h2>Statistics</h2>
       <!-- Add text, images, and links for section 2 below. -->
 
     </div>
     <div class="section" id="section3">
-      <h2>Section 3</h2>
+      <h2>Help the Cause</h2>
       <!-- Add text, images, and links for section 3 below. -->
       
     </div>
