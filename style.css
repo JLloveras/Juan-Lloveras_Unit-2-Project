@@ -14,7 +14,7 @@ body{
     background-size:contain;
     background-position: center top;
 }
-/* The code below centers the text of all h1's on the page. */
+/* The code below centers the text of all h1s and h3s on the page. */
 h1, h3{
     text-align:center;
 }
@@ -23,21 +23,30 @@ h2{
   margin: 7px;
 }
 p{
+  text-align:center;
   width:45%;
-  margin:8px;
-  line-height: 24px;
+  margin: 16px auto;
+  line-height: 32px;
 }
 /* The code below centers all images on the page and gives them a width of 400px. */
 img {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width:400px;
+  width:100%;
 }
-/*PLEASE FOR THE LOVE OF HELL FIX THIS LATER, WHAT IS THIS HORRID DEMON?*/
-.section-img{
-  width:50%;
-  margin: -12% 8px 8px 49%;
+.column{
+  width:30%;
+  float:left;
+  padding:18px;
+}
+p.column{
+  width:100%;
+}
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
 }
 /* The code below aligns all the sections horizontally on the bottom. */
 .section-container {
